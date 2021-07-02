@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="vBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="639.0" prefWidth="765.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jam6m4finalprojects21.NotesController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleNew" text="New" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleOpen" text="Open" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSave" text="Save" />
+              <MenuItem mnemonicParsing="false" onAction="#handleClose" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <HBox fx:id="notesAppHeaderHBox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="notesAppTitle" alignment="CENTER" text="Notes">
+               <font>
+                  <Font name="Bodoni 72 Bold" size="54.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox fx:id="titleHBox" alignment="CENTER" prefHeight="44.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="titleLabel" text="Title: ">
+               <font>
+                  <Font name="Bodoni 72 Bold" size="34.0" />
+               </font>
+            </Label>
+            <TextField fx:id="titleText" prefHeight="27.0" prefWidth="413.0" />
+         </children>
+      </HBox>
+      <HBox fx:id="noteBodyHBox" alignment="CENTER" prefHeight="452.0" prefWidth="617.0">
+         <children>
+            <HTMLEditor fx:id="noteBody" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" prefHeight="441.0" prefWidth="615.0">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </HTMLEditor>
+         </children>
+      </HBox>
+   </children>
+</VBox>

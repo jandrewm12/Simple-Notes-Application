@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="aboutPageVBox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jam6m4finalprojects21.AboutPageController">
+   <children>
+      <HBox fx:id="aboutHeaderHBox" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="aboutHeader" text="About">
+               <font>
+                  <Font name="Bodoni 72 Bold" size="54.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+      <HBox fx:id="subtitleHBox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Text fx:id="subtitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Notes Application - INFOTC 3330 S21 Final Project" wrappingWidth="575.0">
+               <font>
+                  <Font name="Bodoni 72 Bold" size="27.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+      <HBox fx:id="descriptionHBox" alignment="CENTER" prefHeight="203.0" prefWidth="600.0">
+         <children>
+            <Text fx:id="description" strokeType="OUTSIDE" strokeWidth="0.0" text="This application utilizes many aspects of the Java programming language. It allows users to write notes, save and open notes, and utilizes OO practices and Java language features." wrappingWidth="575.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Bodoni 72 Bold" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <Button fx:id="returnButton" mnemonicParsing="false" onAction="#returnToNotes" text="Back to Notes" textAlignment="CENTER">
+         <font>
+            <Font name="Bodoni 72 Bold" size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>
